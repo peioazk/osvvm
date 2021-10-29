@@ -1,0 +1,67 @@
+# Project     : osvvm
+# Description : Compilation resource file.
+#               - Downloaded from github.com/OSVVM/OSVVM/tags : 2021.07
+#               - Created osvvm.ipfpga file.
+#               - Created /sim directory.
+#               - Compilation with Modelsim 10.1c fails
+#               - Compilation with Modelsim 10.5b Ok
+#               - Compilation with GHDL Ok
+[PROJECT]
+osvvm
+#osvvm     v21.07     .rev
+[END]
+
+[IP_LIST]
+[END]
+
+[IP_SIM_LIST]
+[END]
+
+[PROJECT_LIBRARY]
+osvvm
+[END]
+
+[PROJECT_SOURCES]
+ResolutionPkg.vhd osvvm
+# library osvvm
+NamePkg.vhd osvvm
+NameStorePkg.vhd osvvm
+OsvvmGlobalPkg.vhd osvvm
+VendorCovApiPkg.vhd osvvm
+#
+TranscriptPkg.vhd osvvm
+TextUtilPkg.vhd osvvm
+AlertLogPkg.vhd osvvm
+#
+MessageListPkg.vhd osvvm
+#MessagePkg.vhd osvvm
+SortListPkg_int.vhd osvvm
+RandomBasePkg.vhd osvvm
+RandomPkg.vhd osvvm
+RandomProcedurePkg.vhd osvvm
+CoveragePkg.vhd osvvm
+MemoryPkg.vhd osvvm
+#
+ScoreboardGenericPkg.vhd osvvm
+ScoreboardPkg_slv.vhd osvvm
+ScoreboardPkg_int.vhd osvvm
+#
+ResizePkg.vhd osvvm
+TbUtilPkg.vhd osvvm
+#
+OsvvmContext.vhd osvvm
+[END]
+
+[TB_SOURCES]
+demo/AlertLog_Demo_Global.vhd
+demo/AlertLog_Demo_Hierarchy.vhd
+demo/Demo_Rand.vhd
+[END]
+
+[MODELSIM]
+vhdl_options -2008 -explicit
+[END]
+
+[DIR_STRUCT]
+sim_dir sim/
+[END]

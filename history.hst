@@ -1,0 +1,23 @@
+            +------------------------------------------+
+            |     HISTORY IP VHDL : osvvm       	   |
+            +------------------------------------------+
+
+Library osvvm version history.
+
+PROJECT:     osvvm
+DESCRIPTION: osvvm metodology library.: Open Source VHDL Verification Methodology.
+             Download from github.com/OSVVM/OSVVM/tags : 2021.07
+
+v21.07.1 01-09-2021 Peio Azkarate
+        Based on version 2021.07 with small changes to compile with Modelsim.
+        [RTL]
+        [SIM]
+        - Create resource file cplrsc.txt.
+        [GSIM]
+        - Compiled with GHDL.
+        [MSIM]
+        - Compiled with modelsim 10.1c.
+        Due a bug on Modelsim, modifications must to be done in module AlertLogPkg.vhd, in calls to
+        ReportOneTestSummary() pass parameters by position instead by name.
+        [ALTERA]
+        [GIT]

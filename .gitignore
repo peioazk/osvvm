@@ -1,0 +1,12 @@
+ipcpl*.log
+ipsim*.log
+transcript
+work/
+CVS/
+tmp/
+m2onalib/
+vish_stacktrace.vstf
+db/
+incremental_db/
+lib/
+osvvm/
