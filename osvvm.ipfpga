@@ -3,12 +3,14 @@
 #               - Downloaded from github.com/OSVVM/OSVVM/tags : 2021.07
 #               - Created osvvm.ipfpga file.
 #               - Created /sim directory.
-#               - Compilation with Modelsim 10.1c fails
+#               - Modified AlertLogPkg.vhd to compile with Modelsim 10.1c.
+#               - Compilation with Modelsim 10.1c Ok
 #               - Compilation with Modelsim 10.5b Ok
 #               - Compilation with GHDL Ok
 [PROJECT]
-osvvm
+#osvvm
 #osvvm     v21.07     .rev
+osvvm     v21.07.1   .rev
 [END]
 
 [IP_LIST]
